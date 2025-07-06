@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Inder";
+    src: url("./fonts/Inder.ttf") format("truetype");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+header {
+    background-color: #B02020;
+    padding: 1rem 1.5rem;
+    border-bottom-left-radius: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>.brand {
+    height: 4rem;
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+header>nav>.nav-button {
+    font-family: "Inder";
+    color: white;
+    letter-spacing: -2%;
+    font-size: 1.125rem;
+    padding-bottom: 2px;
+}
+
+.nav-button:hover {
+    border: 0px solid white;
+    border-bottom-width: 2px;
+    padding-bottom: 0px;
+}

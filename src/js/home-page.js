@@ -31,9 +31,11 @@ function createCard(img_src, scale, mainText, subText) {
     return card;
 }
 
-export function populateCardSection(parentElement) {
+function populateCardSection(parentElement) {
     cardObjectInfoList.forEach((cardInfo) => {
-        parentElement.appendChild(createCard(cardInfo.img_src, cardInfo.scale, cardInfo.mainText, cardInfo.subText));
+        parentElement.appendChild(
+            createCard(cardInfo.img_src, cardInfo.scale, cardInfo.mainText, cardInfo.subText)
+        );
     });
 }
 

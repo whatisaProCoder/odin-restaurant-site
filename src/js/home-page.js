@@ -4,6 +4,39 @@ import chickenCurryImage from "../images/chicken-curry+.png";
 import authBBQPlatterImage from "../images/auth-bbq-platter.png"
 import chickenBiriyaniImage from "../images/chicken-biriyani.png";
 
+const cardObjectInfoList = [
+    {
+        img_src: chickenCurryImage,
+        scale: 1,
+        mainText: "Chicken curry+",
+        subText: "with roti and pulao"
+    },
+    {
+        img_src: authBBQPlatterImage,
+        scale: 0.875,
+        mainText: "Auth-BBQ Platter",
+        subText: "with 7+ authentic items"
+    }
+]
+
+function createCard(img_src, scale, mainText, subText) {
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.innerHTML = `
+        <img src="${img_src}" style="scale: ${scale}">
+        <div class="info-section">
+        <div class="main-text">${mainText}</div>
+        <div class="sub-text">${subText}</div>
+    `;
+    return card;
+}
+
+export function populateCardSection(parentElement) {
+    cardObjectInfoList.forEach((cardInfo) => {
+        parentElement.appendChild(createCard(cardInfo.img_src, cardInfo.scale, cardInfo.mainText, cardInfo.subText));
+    });
+}
+
 export default function createHomePage() {
     const contentElement = document.querySelector("#content");
 
@@ -20,19 +53,6 @@ export default function createHomePage() {
         </div>
         <div class="popular-items-section">
             <div class="cards-section">
-                <div class="card"><img id="first-card">
-                    <div class="info-section">
-                        <div class="main-text">Chicken curry+</div>
-                        <div class="sub-text">with roti and pulao</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img id="second-card" style="scale: 0.875;">
-                    <div class="info-section">
-                        <div class="main-text">Auth-BBQ Platter</div>
-                        <div class="sub-text">with 7+ authentic items</div>
-                    </div>
-                </div>
             </div>
             <div class="big-text">The most popular<br><em>thalis</em> we make.</div>
         </div>
@@ -55,7 +75,8 @@ export default function createHomePage() {
     // setting dynamic image urls
     document.querySelector(".shop-now-button>img").src = shoppingCartIcon;
     document.querySelector(".hero-section>img").src = chanaChatImage;
-    document.querySelector("#first-card").src = chickenCurryImage;
-    document.querySelector("#second-card").src = authBBQPlatterImage;
     document.querySelector(".biriyani-section img").src = chickenBiriyaniImage;
+
+    // dynamically adding cards
+    populateCardSection(document.querySelector(".cards-section"));
 }

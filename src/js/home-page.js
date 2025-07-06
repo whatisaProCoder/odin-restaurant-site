@@ -52,6 +52,7 @@ export default function createHomePage() {
     </div>
     `;
 
+    // setting dynamic image urls
     document.querySelector(".shop-now-button>img").src = shoppingCartIcon;
     document.querySelector(".hero-section>img").src = chanaChatImage;
     document.querySelector("#first-card").src = chickenCurryImage;

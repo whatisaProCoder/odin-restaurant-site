@@ -1,4 +1,4 @@
 import "./styles.css";
-import "./icon/favicon.svg";
+import "./icons/favicon.svg";
 
 console.log("Project initialised!");

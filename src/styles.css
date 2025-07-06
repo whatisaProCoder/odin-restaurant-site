@@ -3,6 +3,16 @@
     src: url("./fonts/Inder.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Source Serif";
+    src: url("./fonts/SourceSerif.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter.ttf") format("truetype");
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,7 +20,9 @@
 }
 
 body {
-    background-color: #1E1E1E;
+    background-color: #181818;
+    font-size: 16px;
+    margin-top: 4.5rem;
 }
 
 header {
@@ -20,6 +32,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 header>.brand {
@@ -30,10 +47,11 @@ header>nav {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-right: 2rem;
+    margin: 0rem 2rem;
+    user-select: none;
 }
 
-header>nav>.nav-button {
+.nav-button {
     font-family: "Inder";
     color: white;
     letter-spacing: -2%;
@@ -45,4 +63,242 @@ header>nav>.nav-button {
     border: 0px solid white;
     border-bottom-width: 2px;
     padding-bottom: 0px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    background: url("./design/hero-shape.svg") no-repeat bottom;
+    background-size: cover;
+    gap: 4rem;
+}
+
+.hero-section>img {
+    width: 25rem;
+    filter: drop-shadow(0px 8px 40px rgba(0, 0, 0, 50%));
+}
+
+.hero-section>.hero-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.hero-section>.hero-info-section>.big-text {
+    font-family: "SourceSerif";
+    color: white;
+    font-size: 2.5rem;
+}
+
+.shop-now-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-family: "Inder";
+    color: white;
+    background-color: #202020;
+    border: 2px solid #2A2A2A;
+    padding: 0.75rem 1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 25%));
+    user-select: none;
+}
+
+.shop-now-button>img {
+    height: 1.5rem;
+}
+
+.popular-items-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 4rem 0rem;
+}
+
+.popular-items-section>.cards-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.popular-items-section>.cards-section>.card {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.popular-items-section>.cards-section>.card>img {
+    width: 12rem;
+    align-self: center;
+    margin: 0rem 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.popular-items-section>.cards-section>.card>.info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.125rem;
+    font-family: "Inter";
+    padding-bottom: 1rem;
+}
+
+.popular-items-section>.cards-section>.card>.info-section>.main-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.popular-items-section>.cards-section>.card>.info-section>.sub-text {
+    color: #bbbbbb;
+    font-size: 0.75rem;
+}
+
+.popular-items-section>.big-text {
+    font-family: "SourceSerif";
+    color: white;
+    font-size: 2.5rem;
+}
+
+.biriyani-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 2rem 4rem;
+    font-family: "Inter";
+}
+
+.biriyani-section>.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 4.5rem;
+}
+
+.biriyani-section>.info-section>.big-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.biriyani-section>.info-section>.food-names {
+    color: #bbbbbb;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    line-height: 135%;
+}
+
+.biriyani-section>img {
+    width: 30rem;
+    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 50%));
+    padding-left: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./design/footer-shape.svg") no-repeat top;
+    background-size: cover;
+    padding-top: 8rem;
+}
+
+footer>.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14rem;
+}
+
+footer>.footer-content>.action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Inter";
+    gap: 1.5rem;
+}
+
+footer>.footer-content>.action-section>.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer>.footer-content>.action-section>.text-section>.sub-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #bbbbbb;
+}
+
+footer>.footer-content>.action-section>.text-section>.big-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact-now-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-family: "Inder";
+    color: white;
+    background-color: #202020;
+    border: 2px solid #2A2A2A;
+    padding: 0.75rem 1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 25%));
+    user-select: none;
+}
+
+.contact-now-button>img {
+    height: 1.5rem;
+}
+
+footer>.footer-content>.address-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "Inter";
+    gap: 0.5rem;
+    margin-right: 2rem;
+}
+
+footer>.footer-content>.address-section>.heading-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+footer>.footer-content>.address-section>.info-text {
+    color: #bbbbbb;
+    font-weight: 500;
+}
+
+footer>.credit-section {
+    color: #bbbbbb;
+    font-family: "Inter";
+    font-size: 0.625rem;
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
 }

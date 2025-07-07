@@ -25,8 +25,9 @@ function createCard(img_src, scale, mainText, subText) {
     card.innerHTML = `
         <img src="${img_src}" style="scale: ${scale}">
         <div class="info-section">
-        <div class="main-text">${mainText}</div>
-        <div class="sub-text">${subText}</div>
+            <div class="main-text">${mainText}</div>
+            <div class="sub-text">${subText}</div>
+        </div>
     `;
     return card;
 }

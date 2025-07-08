@@ -2,6 +2,10 @@
 
 A modern restaurant website built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This single-page application showcases a fictional restaurant with dynamic content loading and modern web development practices.
 
+## 🚀 Live Demo
+
+[View the live site here](https://whatisaprocoder.github.io/odin-restaurant-site/)
+
 - **Design**: Hand-coded from custom Figma design with SVG graphics
 - **Target**: Desktop-optimized experience
 

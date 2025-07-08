@@ -1,4 +1,4 @@
-# 🍽️ Chillax Restaurant Website
+# Chillax Restaurant Website
 
 A modern restaurant website built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This single-page application showcases a fictional restaurant with dynamic content loading and modern web development practices.
 

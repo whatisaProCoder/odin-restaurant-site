@@ -3,6 +3,8 @@ import chanaChatImage from "../images/chana-chat.png";
 import chickenCurryImage from "../images/chicken-curry+.png";
 import authBBQPlatterImage from "../images/auth-bbq-platter.png"
 import chickenBiriyaniImage from "../images/chicken-biriyani.png";
+import createMenuPage from "./menu-page";
+import { removeAllActiveClass } from "./navigation-module";
 
 const cardObjectInfoList = [
     {
@@ -82,4 +84,13 @@ export default function createHomePage() {
 
     // dynamically adding cards
     populateCardSection(document.querySelector(".cards-section"));
+
+    // handle shop-now-button
+    const shopNowButton = document.querySelector(".shop-now-button");
+    const menuButton = document.querySelector("#menu-button");
+    shopNowButton.addEventListener("click", (e) => {
+        removeAllActiveClass();
+        createMenuPage();
+        menuButton.classList.add("nav-button-active");
+    })
 }

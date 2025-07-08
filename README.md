@@ -5,11 +5,6 @@ A modern restaurant website built as part of [The Odin Project](https://www.theo
 **Design**: Hand-coded from custom Figma design with SVG graphics  
 **Target**: Desktop-optimized experience
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-
 ## ✨ Features
 
 ### 🎨 User Interface

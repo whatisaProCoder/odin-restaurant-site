@@ -2,8 +2,8 @@
 
 A modern restaurant website built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This single-page application showcases a fictional restaurant with dynamic content loading and modern web development practices.
 
-**Design**: Hand-coded from custom Figma design with SVG graphics  
-**Target**: Desktop-optimized experience
+- **Design**: Hand-coded from custom Figma design with SVG graphics
+- **Target**: Desktop-optimized experience
 
 ## ✨ Features
 

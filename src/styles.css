@@ -137,23 +137,24 @@ header>nav {
     gap: 1rem;
 }
 
-.popular-items-section>.cards-section>.card {
+.card {
     background-color: #202020;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+    overflow: hidden;
 }
 
-.popular-items-section>.cards-section>.card>img {
+.card>img {
     width: 12rem;
     align-self: center;
     margin: 0rem 0.5rem;
     margin-top: 0.25rem;
 }
 
-.popular-items-section>.cards-section>.card>.info-section {
+.card>.info-section {
     display: flex;
     flex-direction: column;
     padding: 0rem 1.125rem;
@@ -161,13 +162,13 @@ header>nav {
     padding-bottom: 1rem;
 }
 
-.popular-items-section>.cards-section>.card>.info-section>.main-text {
+.card>.info-section>.main-text {
     color: white;
     font-weight: bold;
     font-size: 1.125rem;
 }
 
-.popular-items-section>.cards-section>.card>.info-section>.sub-text {
+.card>.info-section>.sub-text {
     color: #bbbbbb;
     font-size: 0.75rem;
 }
@@ -307,4 +308,96 @@ footer>.credit-section {
     font-weight: 600;
     margin-top: 6rem;
     margin-bottom: 1rem;
+}
+
+.header-background {
+    display: block;
+    background-color: #B02020;
+    height: 6rem;
+    width: 100%;
+    border-bottom-left-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border: 2px solid #B02020;
+    transition: all 0.3s ease;
+}
+
+.header-background-scroll-behavior {
+    background-color: #181818;
+    border-color: #181818;
+}
+
+.section-name {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.section-name>.text {
+    border: 2px solid #202020;
+    color: #BBBBBB;
+    font-weight: 500;
+    font-family: "Inter";
+    padding: 0.35rem;
+    border-radius: 0.5rem;
+}
+
+.section-name>.line {
+    height: 2px;
+    flex: 1;
+    background-color: #202020;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.space {
+    padding: 1.5rem;
+}
+
+.paragraph-heading {
+    color: white;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 1.5rem 1.65rem;
+    margin-bottom: 1rem;
+}
+
+.paragraph-text {
+    color: #bbbbbb;
+    font-family: "Inter";
+    margin: 0rem 1.65rem;
+    width: 75ch;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.paragraph-text-founder {
+    color: #bbbbbb;
+    font-family: "Inter";
+    margin: 0rem 1.65rem;
+    width: 75ch;
+    margin-bottom: 4rem;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.excellence-bubble-element {
+    width: 75ch;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    user-select: none;
 }

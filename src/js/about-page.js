@@ -1,5 +1,16 @@
 import excellenceBubbleSVG from "../design/excellence-bubble.svg";
 
+function handleHeaderBackgroundElement() {
+    const headerBackgroundElement = document.querySelector(".header-background");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+            headerBackgroundElement.classList.add("header-background-scroll-behavior");
+        } else {
+            headerBackgroundElement.classList.remove("header-background-scroll-behavior");
+        }
+    });
+}
+
 export default function createAboutPage() {
     const contentElement = document.querySelector("#content");
 
@@ -26,4 +37,7 @@ export default function createAboutPage() {
 
     // dynamically set src
     document.querySelector(".excellence-bubble-element").src = excellenceBubbleSVG;
+
+    // handle header background
+    handleHeaderBackgroundElement();
 }

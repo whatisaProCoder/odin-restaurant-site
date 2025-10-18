@@ -5,7 +5,11 @@ A modern restaurant website built as part of [The Odin Project](https://www.theo
 - **Design**: Hand-coded from custom Figma design with SVG graphics
 - **Target**: Desktop-optimized experience
 
-## 🚀 Live Demo
+## Demo
+
+![Dropdown Menu Demo](./demo/showcase.png)
+
+## 🚀 Live
 
 [View the live site here!](https://whatisaprocoder.github.io/odin-restaurant-site/)
 
